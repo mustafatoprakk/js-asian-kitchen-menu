@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkish Kitchen</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Open+Sans+Condensed:wght@300&family=Roboto+Mono:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <style>
+        .t1-color{
+            color: #2980b9;
+            font-size: 70px;
+        }
+        .title-color{
+            color: #c0392b;
+        }
+        body{
+            background-color: #ecf0f1;
+        }
+        .font-roboto{
+            font-family: 'Roboto Mono', monospace;
+        }
+        .font-corinthia{
+            font-family: 'Corinthia', cursive;
+        }
+        .font-sans-serif{
+            font-family: 'Open Sans Condensed', sans-serif;            
+        }
+
+        .menu-title{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+        }
+   
+        .menu-items{
+            display: flex;
+            margin: 20px 0;
+        }
+
+        .photo {
+            width: 100%;
+            height: 175px;
+            object-fit: cover;
+            border: 0.25rem solid black;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+<body onload="getAll()">
+    
+    <div class="container pt-3">
+        <div class="text-center py-3">
+            <h1 class="t1-color font-corinthia" >Asian Kitchen's Menu</h1>
+            <div class="pt-4">
+                <button class="btn btn-outline-dark me-2 font-roboto" id="all_menu">All</button>
+                <button class="btn btn-outline-dark me-2 font-roboto" id="korea_menu">Korea</button>
+                <button class="btn btn-outline-dark me-2 font-roboto" id="japan_menu">Japan</button>
+                <button class="btn btn-outline-dark font-roboto" id="china_menu">China</button>
+            </div>
+        </div>
+        <div>
+            <div class="row pt-5" id="menu_list">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
